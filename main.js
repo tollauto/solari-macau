@@ -53,6 +53,8 @@ function writeUnitHTML()
 		out += "    </div>";
 	}
 	//Below draws the headers. Positions to change in setting js.
+	out += "  <img id='wigwagleft"+unit+"' style='position:absolute; ' src='img/green_wigwag_an.gif' alt='' />";
+	out += "  <img id='wigwagright"+unit+"' style='position:absolute; ' src='img/green_wigwag_an.gif' alt='' />";
 	out += "  <img id='headeroneImg"+unit+"' style='position:absolute; ' src='img/headers/h1ShippingCo.png' alt='' />";
 	out += "  <img id='headertwoImg"+unit+"' style='position:absolute; ' src='img/headers/h3No.png' alt='' />";
 	out += "  <img id='headerthreeImg"+unit+"' style='position:absolute; ' src='img/headers/h2Destination.png' alt='' />";

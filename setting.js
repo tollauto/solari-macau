@@ -5,6 +5,8 @@ var unitSum = 1; //筐体の台数
 var unitRoundRadius = 40;
 
 unitDivSetting = [
+	["wigwagleft", 0, 103, 116, 40],
+	["wigwagright", 1616, 103, 116, 40],
 	["headeroneImg", 108, 0, 247, 70],
 	["headertwoImg", 392, 0, 69, 70],
 	["headerthreeImg", 604, 0, 247, 70],
