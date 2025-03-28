@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Macau Ferry Pier - Hong Kong 1993 (Developing - private use only)</title>
+
+<style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+</style>
+
+<script type="text/javascript" src="judgeOSBrowser.js" charset="UTF-8"></script> <!--讀javascript-->
+<script type="text/javascript" src="utility.js" charset="UTF-8"></script> <!--讀javascript-->
+<script type="text/javascript" src="setting.js" charset="UTF-8"></script> <!--讀javascript-->
+<script type="text/javascript" src="main.js" charset="UTF-8"></script> <!--讀javascript-->
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+<span id="formDiv"></span> <!--輸入個表-->
+
+　
+<input type="button" value="　Start　" onclick="updateLoop = false; 
+readFormPanel(0, 0); readFormPanel(0, 1); readFormPanel(0, 2); readFormPanel(0, 3); readFormPanel(0, 4); readFormPanel(0, 5); readFormPanel(0, 6); readFormPanel(0, 7); readFormPanel(0, 8); readFormPanel(0, 9); readFormPanel(0, 10); readFormPanel(0, 11); readFormPanel(0, 12); readFormPanel(0, 13); readFormPanel(0, 14); readFormPanel(0, 15); readFormPanel(0, 16);" style="" />　<!--改呢個加控制數量-->
+<input type="button" value="　Stop　" onclick="updateLoop = false; stopAnime(); " style="" />
+　/　
+<input type="button" value="　Random　" onclick="setRandom(); updateLoop = false; 
+readFormPanel(0, 0); readFormPanel(0, 1); readFormPanel(0, 2); readFormPanel(0, 3); readFormPanel(0, 4); readFormPanel(0, 5); readFormPanel(0, 6); readFormPanel(0, 7); readFormPanel(0, 8); readFormPanel(0, 9); readFormPanel(0, 10); readFormPanel(0, 11); readFormPanel(0, 12); readFormPanel(0, 13); readFormPanel(0, 14); readFormPanel(0, 15); readFormPanel(0, 16);" style="" />　
+<input type="button" value="　Non-stop　" onclick="updatePanelLoop(); " style="" />　
+<hr/>
+　　
+FPS
+<input id='fpsInput' type='text' value='60' size='3' style='' /> fps
+<input type="button" value="－" onclick="changeTextBox('fpsInput', -5);" style="" />
+<input type="button" value="＋" onclick="changeTextBox('fpsInput',  5);" style="" />
+　　
+Speed
+<input id='speedInput' type='text' value='8' size='3' style='' />
+<input type="button" value="－" onclick="changeTextBox('speedInput', -0.5);" style="" />
+<input type="button" value="＋" onclick="changeTextBox('speedInput',  0.5);" style="" />
+　　
+Zoom
+<input id='zoomInput' type='text' value='100' size='3' style='' onkeyup="adjustSize();" />%
+<input type="button" value="－" onclick="changeTextBox('zoomInput', 0.909091); adjustSize();" />
+<input type="button" value="＋" onclick="changeTextBox('zoomInput', 1.1     ); adjustSize();" />
+　　
+
+<br/>
+<hr/>
+
+<div id="drawDiv" style="position:relative; "></div> <!--Display container-->
+
+<script type="text/javascript"> init(); </script>
+
+</body>
+</html>
